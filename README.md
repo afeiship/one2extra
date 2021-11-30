@@ -21,9 +21,9 @@ const one2extra = {
   extra: [2,3]
 };
 
-one2extra(0, arr); { one: 1, extra: [2,3] }
-one2extra(1, arr); { one: 2, extra: [1,3] }
-one2extra(2, arr); { one: 3, extra: [1,2] }
+one2extra(0, arr); // { one: 1, extra: [2,3] }
+one2extra(1, arr); // { one: 2, extra: [1,3] }
+one2extra(2, arr); // { one: 3, extra: [1,2] }
 ```
 
 ## license
