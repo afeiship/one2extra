@@ -1,65 +1,42 @@
-# react-mui-switch
-> Switch for mui
+# one2extra
+> GGet one and extra.
 
-## properties:
-```javascript
+[![version][version-image]][version-url]
+[![license][license-image]][license-url]
+[![size][size-image]][size-url]
+[![download][download-image]][download-url]
 
-  static propTypes = {
-    className: PropTypes.string
-  };
-
-  static defaultProps = {
-  };
-  
+## installation
+```shell
+npm install @jswork/one2extra
 ```
 
-## install && import:
-```bash
-npm install --save afeiship/react-mui-switch --registry=https://registry.npm.taobao.org
-```
-
+## usage
 ```js
-import ReactMuiSwitch from 'react-mui-switch';
+import one2extra from '@jswork/one2extra';
+
+const arr = [ 1, 2, 3 ];
+const one2extra = {
+  one: 1, 
+  extra: [2,3]
+};
+
+one2extra(0); { one: 1, extra: [2,3] }
+one2extra(1); { one: 2, extra: [1,3] }
+one2extra(2); { one: 3, extra: [1,2] }
 ```
 
-```scss
-// customize your styles:
-$react-mui-switch-options:(
-);
+## license
+Code released under [the MIT license](https://github.com/afeiship/one2extra/blob/master/LICENSE.txt).
 
-@import 'node_modules/react-mui-switch/dist/style.scss';
-```
+[version-image]: https://img.shields.io/npm/v/@jswork/one2extra
+[version-url]: https://npmjs.org/package/@jswork/one2extra
 
+[license-image]: https://img.shields.io/npm/l/@jswork/one2extra
+[license-url]: https://github.com/afeiship/one2extra/blob/master/LICENSE.txt
 
-## usage:
-```jsx
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/one2extra
+[size-url]: https://github.com/afeiship/one2extra/blob/master/dist/one2extra.min.js
 
-// install: npm install afeiship/react-mui-switch --save
-// import : import ReactMuiSwitch from 'react-mui-switch'
-
-class App extends React.Component{
-  state = {
-
-  };
-
-  constructor(props){
-    super(props);
-    window.demo = this;
-    window.refs = this.refs;
-    window.rc = this.refs.rc;
-  }
-
-  _onChange = e =>{
-    console.log('switch onchange:->', e.target.value);
-  };
-
-  render(){
-    return (
-      <div className="hello-react-mui-switch">
-        <ReactMuiSwitch onChange={this._onChange} ref='rc' />
-      </div>
-    );
-  }
-}
-
-```
+[download-image]: https://img.shields.io/npm/dm/@jswork/one2extra
+[download-url]: https://www.npmjs.com/package/@jswork/one2extra
