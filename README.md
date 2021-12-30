@@ -16,10 +16,6 @@ npm install @jswork/one2extra
 import one2extra from '@jswork/one2extra';
 
 const arr = [ 1, 2, 3 ];
-const one2extra = {
-  one: 1, 
-  extra: [2,3]
-};
 
 one2extra(0, arr); // { one: 1, extra: [2,3] }
 one2extra(1, arr); // { one: 2, extra: [1,3] }
