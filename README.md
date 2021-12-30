@@ -16,10 +16,11 @@ npm install @jswork/one2extra
 import one2extra from '@jswork/one2extra';
 
 const arr = [ 1, 2, 3 ];
+const fn3 = (list)=> list.findIndex(item => item === 3);
 
-one2extra(0, arr); // { one: 1, extra: [2,3] }
-one2extra(1, arr); // { one: 2, extra: [1,3] }
-one2extra(2, arr); // { one: 3, extra: [1,2] }
+one2extra(0, arr); // [1,[2,3]]
+one2extra(1, arr); // [2,[1,3]]
+one2extra(fn3, arr); // [3,[1,2]]
 ```
 
 ## license
